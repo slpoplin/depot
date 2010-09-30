@@ -285,3 +285,18 @@ Processing ProductsController#index (for 127.0.0.1 at 2010-09-28 23:16:12) [GET]
 Rendering template within layouts/products
 Rendering products/index
 Completed in 33ms (View: 25, DB: 2) | 200 OK [http://localhost/products]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-09-29 22:56:46) [GET]
+Rendering store/index
+Completed in 35ms (View: 32, DB: 0) | 200 OK [http://localhost/store]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-09-29 23:04:41) [GET]
+  [4;36;1mProduct Load (50.6ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering store/index
+Completed in 231ms (View: 174, DB: 51) | 200 OK [http://localhost/store]

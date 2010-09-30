@@ -7,6 +7,10 @@ class Product < ActiveRecord::Base
                       :with => %r{\.(git|jpg|png)$}i,
                       :message => 'must be a URL for GIF, JPG or PNG image.'
 
+  def self.find_products_for_sale
+    find(:all, :order => "title")
+  end
+
 protected
 
   def price_must_be_at_least_a_cent
