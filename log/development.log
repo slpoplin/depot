@@ -598,3 +598,154 @@ Processing StoreController#index (for 127.0.0.1 at 2010-10-07 22:28:56) [GET]
 Rendering template within layouts/store
 Rendering store/index
 Completed in 29ms (View: 20, DB: 5) | 200 OK [http://localhost/store]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-10-12 21:56:40) [GET]
+  [4;36;1mProduct Load (68.7ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 436ms (View: 321, DB: 100) | 200 OK [http://localhost/store]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-10-12 21:56:43) [POST]
+  Parameters: {"authenticity_token"=>"mvKAjUJb9gLCtuRzjnUVgo2Q1aliwe1mxoGZuP6MEp4=", "id"=>"2"}
+  [4;35;1mProduct Load (18.3ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+Completed in 66ms (View: 8, DB: 21) | 200 OK [http://localhost/store/add_to_cart/2]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-10-12 21:56:53) [POST]
+  Parameters: {"authenticity_token"=>"mvKAjUJb9gLCtuRzjnUVgo2Q1aliwe1mxoGZuP6MEp4=", "id"=>"4"}
+  [4;36;1mProduct Load (0.9ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 4) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+Completed in 24ms (View: 4, DB: 4) | 200 OK [http://localhost/store/add_to_cart/4]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing StoreController#empty_cart (for 127.0.0.1 at 2010-10-12 21:56:55) [POST]
+  Parameters: {"authenticity_token"=>"mvKAjUJb9gLCtuRzjnUVgo2Q1aliwe1mxoGZuP6MEp4="}
+Redirected to http://localhost:3000/store
+Completed in 16ms (DB: 3) | 302 Found [http://localhost/store/empty_cart]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-10-12 21:56:55) [GET]
+  [4;35;1mProduct Load (1.9ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 26ms (View: 15, DB: 3) | 200 OK [http://localhost/store]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-10-12 21:56:57) [POST]
+  Parameters: {"authenticity_token"=>"mvKAjUJb9gLCtuRzjnUVgo2Q1aliwe1mxoGZuP6MEp4=", "id"=>"3"}
+  [4;36;1mProduct Load (0.8ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+Completed in 23ms (View: 4, DB: 4) | 200 OK [http://localhost/store/add_to_cart/3]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-10-12 22:07:54) [POST]
+  Parameters: {"authenticity_token"=>"mvKAjUJb9gLCtuRzjnUVgo2Q1aliwe1mxoGZuP6MEp4=", "id"=>"3"}
+  [4;35;1mProduct Load (1.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+Completed in 71ms (View: 46, DB: 5) | 200 OK [http://localhost/store/add_to_cart/3]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-10-12 22:08:20) [GET]
+  [4;36;1mProduct Load (2.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 31ms (View: 21, DB: 4) | 200 OK [http://localhost/store]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-10-12 22:08:22) [POST]
+  Parameters: {"authenticity_token"=>"mvKAjUJb9gLCtuRzjnUVgo2Q1aliwe1mxoGZuP6MEp4=", "id"=>"4"}
+  [4;35;1mProduct Load (0.7ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 4) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+Completed in 32ms (View: 8, DB: 4) | 200 OK [http://localhost/store/add_to_cart/4]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-10-12 22:10:44) [GET]
+  Parameters: {"id"=>"blah"}
+  [4;36;1mProduct Load (0.8ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 0) [0m
+Attempt to access invalid product blah
+Redirected to http://localhost:3000/store
+Completed in 23ms (DB: 3) | 302 Found [http://localhost/store/add_to_cart/blah]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-10-12 22:10:44) [GET]
+  [4;35;1mProduct Load (2.2ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 32ms (View: 23, DB: 4) | 200 OK [http://localhost/store]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-10-12 22:10:46) [POST]
+  Parameters: {"authenticity_token"=>"mvKAjUJb9gLCtuRzjnUVgo2Q1aliwe1mxoGZuP6MEp4=", "id"=>"2"}
+  [4;36;1mProduct Load (0.9ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+Completed in 29ms (View: 8, DB: 4) | 200 OK [http://localhost/store/add_to_cart/2]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-10-12 22:11:25) [POST]
+  Parameters: {"authenticity_token"=>"mvKAjUJb9gLCtuRzjnUVgo2Q1aliwe1mxoGZuP6MEp4=", "id"=>"2"}
+  [4;35;1mProduct Load (0.7ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+Completed in 33ms (View: 12, DB: 4) | 200 OK [http://localhost/store/add_to_cart/2]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing StoreController#empty_cart (for 127.0.0.1 at 2010-10-12 22:11:26) [POST]
+  Parameters: {"authenticity_token"=>"mvKAjUJb9gLCtuRzjnUVgo2Q1aliwe1mxoGZuP6MEp4="}
+Redirected to http://localhost:3000/store
+Completed in 35ms (DB: 21) | 302 Found [http://localhost/store/empty_cart]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-10-12 22:11:27) [GET]
+  [4;36;1mProduct Load (1.9ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 26ms (View: 14, DB: 6) | 200 OK [http://localhost/store]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-10-12 22:11:29) [POST]
+  Parameters: {"authenticity_token"=>"mvKAjUJb9gLCtuRzjnUVgo2Q1aliwe1mxoGZuP6MEp4=", "id"=>"2"}
+  [4;35;1mProduct Load (0.7ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+Completed in 26ms (View: 7, DB: 4) | 200 OK [http://localhost/store/add_to_cart/2]
