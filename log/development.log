@@ -749,3 +749,75 @@ Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-10-12 22:11:29) [P
 Rendering template within layouts/store
 Rendering store/add_to_cart
 Completed in 26ms (View: 7, DB: 4) | 200 OK [http://localhost/store/add_to_cart/2]
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-10-19 22:58:21) [GET]
+  [4;36;1mProduct Load (63.7ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (2.3ms)
+Completed in 300ms (View: 85, DB: 89) | 200 OK [http://localhost/store]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-10-19 22:58:26) [POST]
+  Parameters: {"authenticity_token"=>"2h4KWXOVKXSo5GwtSDHP5wRLfwO85SMXCuP0AE6ZP/o=", "id"=>"2"}
+  [4;35;1mProduct Load (16.1ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+
+ActionView::MissingTemplate (Missing template store/add_to_cart.erb in view path app/views):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-10-19 23:00:22) [POST]
+  Parameters: {"authenticity_token"=>"2h4KWXOVKXSo5GwtSDHP5wRLfwO85SMXCuP0AE6ZP/o=", "id"=>"2"}
+  [4;36;1mProduct Load (0.7ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Redirected to http://localhost:3000/store
+Completed in 22ms (DB: 4) | 302 Found [http://localhost/store/add_to_cart/2]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-10-19 23:00:22) [GET]
+  [4;35;1mProduct Load (2.0ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart_item (1.3ms)
+Rendered store/_cart (6.6ms)
+Completed in 37ms (View: 21, DB: 4) | 200 OK [http://localhost/store]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-10-19 23:00:25) [POST]
+  Parameters: {"authenticity_token"=>"2h4KWXOVKXSo5GwtSDHP5wRLfwO85SMXCuP0AE6ZP/o=", "id"=>"4"}
+  [4;36;1mProduct Load (0.7ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 4) [0m
+Redirected to http://localhost:3000/store
+Completed in 20ms (DB: 4) | 302 Found [http://localhost/store/add_to_cart/4]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-10-19 23:00:25) [GET]
+  [4;35;1mProduct Load (2.0ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart_item (0.6ms)
+Rendered store/_cart_item (0.6ms)
+Rendered store/_cart (54.8ms)
+Completed in 88ms (View: 68, DB: 8) | 200 OK [http://localhost/store]

@@ -192,6 +192,7 @@ h1 {
 }
 
 /* Styles for the cart in the main page */
+/* These can probably go away */
 
 .cart-title {
   font: 120% bold;
@@ -204,4 +205,12 @@ h1 {
 .total-line .total-cell {
   font-weight: bold;
   border-top: 1px solid #595;
+}
+
+/* Styles for the cart in the sidebar */
+
+#cart table {
+	border-top:		1px dotted #595;
+	border-bottom:	1px dotted #595;
+	margin-bottom:	10px;
 }
