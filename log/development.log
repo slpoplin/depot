@@ -878,3 +878,40 @@ Rendered store/_cart_item (4.2ms)
 Rendered store/_cart_item (0.6ms)
 Rendered store/_cart (6.9ms)
 Completed in 28ms (View: 8, DB: 2) | 200 OK [http://localhost/store/add_to_cart/2]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-10-20 21:13:00) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"y8yGvNwn9h8hUkpYK6Si7i+vaAvsIJDrww45MWWWxBk=", "id"=>"2", "_"=>""}
+  [4;35;1mProduct Load (0.8ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (5.0ms)
+Rendered store/_cart_item (0.6ms)
+Rendered store/_cart (11.5ms)
+Completed in 38ms (View: 17, DB: 3) | 200 OK [http://localhost/store/add_to_cart/2]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-10-20 21:13:02) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"y8yGvNwn9h8hUkpYK6Si7i+vaAvsIJDrww45MWWWxBk=", "id"=>"4", "_"=>""}
+  [4;36;1mProduct Load (0.8ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 4) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (4.0ms)
+Rendered store/_cart_item (0.6ms)
+Rendered store/_cart (6.6ms)
+Completed in 27ms (View: 8, DB: 2) | 200 OK [http://localhost/store/add_to_cart/4]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-10-20 21:13:05) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"y8yGvNwn9h8hUkpYK6Si7i+vaAvsIJDrww45MWWWxBk=", "id"=>"3", "_"=>""}
+  [4;35;1mProduct Load (0.7ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (4.0ms)
+Rendered store/_cart_item (0.6ms)
+Rendered store/_cart_item (0.5ms)
+Rendered store/_cart (7.2ms)
+Completed in 28ms (View: 9, DB: 2) | 200 OK [http://localhost/store/add_to_cart/3]

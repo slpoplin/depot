@@ -9,9 +9,11 @@ class Cart
   	current_item = @items.find {|item| item.product == product}
   	if current_item
   		current_item.increment_quantity
-  	else
-  		@items << CartItem.new(product)
-  	end
+    else
+      current_item = CartItem.new(product) 
+  		@items << current_item
+    end
+    current_item
   end
 
   def total_price
