@@ -24,7 +24,7 @@ module ActiveRecord
     private
     
       def get_constraint_name(prefix, from_table, to_table)
-        return "#{prefix}_#{from_table}_#{to_table}"
+        "#{prefix}_#{from_table}_#{to_table}"
       end
       
     end

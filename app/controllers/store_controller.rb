@@ -17,13 +17,33 @@ class StoreController < ApplicationController
     redirect_to_index("Invalid product")
   end
 
+  def checkout
+    @cart = find_cart
+    if @cart.items.empty?
+      redirect_to_index("Your cart is empty")
+    else
+      @order = Order.new
+    end
+  end
+
   def empty_cart
     session[:cart] = nil
     respond_to do |format|
       format.js if request.xhr?
       format.html {redirect_to_index}
     end
-#    redirect_to_index
+  end
+  
+  def save_order
+    @cart = find_cart
+    @order = Order.new(params[:order])
+    @order.add_line_items_from_cart(@cart)
+    if @order.save
+      session[:cart] = nil
+      redirect_to_index("Thank you for your order")
+    else
+      render :action => 'checkout'
+    end
   end
 
 private
