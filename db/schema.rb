@@ -20,6 +20,9 @@ ActiveRecord::Schema.define(:version => 20101022014612) do
     t.datetime "updated_at"
   end
 
+  add_index "line_items", ["order_id"], :name => "fk_line_items_orders"
+  add_index "line_items", ["product_id"], :name => "fk_line_items_products"
+
   create_table "orders", :force => true do |t|
     t.string   "name"
     t.text     "address"

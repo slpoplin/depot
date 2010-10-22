@@ -1667,3 +1667,382 @@ Migrating to CreateLineItems (20101022014612)
   [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101022014612')[0m
   [4;36;1mSQL (18.4ms)[0m   [0;1mCOMMIT[0m
   [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20100911013827)
+Migrating to AddPriceToProduct (20100911014506)
+Migrating to AddTestData (20100911024602)
+Migrating to CreateSessions (20101007013050)
+Migrating to CreateOrders (20101022014501)
+Migrating to CreateLineItems (20101022014612)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateLineItems (20101022014612)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (15.8ms)[0m   [0mDROP TABLE "line_items"[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101022014612'[0m
+  [4;35;1mSQL (20.2ms)[0m   [0mCOMMIT[0m
+Migrating to CreateOrders (20101022014501)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mDROP TABLE "orders"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101022014501'[0m
+  [4;35;1mSQL (3.2ms)[0m   [0mCOMMIT[0m
+Migrating to CreateSessions (20101007013050)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mDROP TABLE "sessions"[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101007013050'[0m
+  [4;35;1mSQL (25.6ms)[0m   [0mCOMMIT[0m
+Migrating to AddTestData (20100911024602)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProduct Delete all (0.6ms)[0m   [0mDELETE FROM "products" [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100911024602'[0m
+  [4;35;1mSQL (18.5ms)[0m   [0mCOMMIT[0m
+Migrating to AddPriceToProduct (20100911014506)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mALTER TABLE "products" DROP "price"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100911014506'[0m
+  [4;35;1mSQL (5.1ms)[0m   [0mCOMMIT[0m
+Migrating to CreateProducts (20100911013827)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mDROP TABLE "products"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100911013827'[0m
+  [4;35;1mSQL (11.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (11.8ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20100911013827)
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (110.5ms)[0m   [0;1mCREATE TABLE "products" ("id" serial primary key, "title" character varying(255), "description" text, "image_url" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100911013827')[0m
+  [4;36;1mSQL (17.9ms)[0m   [0;1mCOMMIT[0m
+Migrating to AddPriceToProduct (20100911014506)
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mALTER TABLE "products" ADD COLUMN "price" decimal(8,2)[0m
+  [4;35;1mSQL (19.6ms)[0m   [0mALTER TABLE "products" ALTER COLUMN "price" SET DEFAULT 0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100911014506')[0m
+  [4;35;1mSQL (16.5ms)[0m   [0mCOMMIT[0m
+Migrating to AddTestData (20100911024602)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProduct Delete all (0.6ms)[0m   [0mDELETE FROM "products" [0m
+  [4;36;1mProduct Load (0.9ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = E'Pragmatic Project Automation') LIMIT 1[0m
+  [4;35;1mSQL (8.4ms)[0m   [0mINSERT INTO "products" ("price", "created_at", "title", "image_url", "updated_at", "description") VALUES(29.95, '2010-10-22 03:07:12.974566', E'Pragmatic Project Automation', E'/images/auto.jpg', '2010-10-22 03:07:12.974566', E'<p>
+ <em>Pragmatic Project Automation</em> shows you how to improve the 
+ consistency and repeatability of your project''s procedures using 
+ automation to reduce risk and errors.
+ </p>
+ <p>
+ Simply put, we''re going to put this thing called a computer to work 
+ for you doing the mundane (but important) project stuff. That means 
+ you''ll have more time and energy to do the really 
+ exciting---and difficult---stuff, like writing quality code.
+ </p>') RETURNING "id"[0m
+  [4;36;1mProduct Load (0.5ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = E'Pragmatic Version Control') LIMIT 1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO "products" ("price", "created_at", "title", "image_url", "updated_at", "description") VALUES(28.5, '2010-10-22 03:07:13.032470', E'Pragmatic Version Control', E'/images/svn.jpg', '2010-10-22 03:07:13.032470', E'<p>
+ This book is a recipe-based approach to using Subversion that will 
+ get you up and running quickly---and correctly. All projects need
+ version control: it''s a foundational piece of any project''s 
+ infrastructure. Yet half of all project teams in the U.S. don''t use
+ any version control at all. Many others don''t use it well, and end 
+ up experiencing time-consuming problems.
+ </p>') RETURNING "id"[0m
+  [4;36;1mProduct Load (0.4ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = E'Pragmatic Unit Testing (C#)') LIMIT 1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO "products" ("price", "created_at", "title", "image_url", "updated_at", "description") VALUES(27.75, '2010-10-22 03:07:13.037604', E'Pragmatic Unit Testing (C#)', E'/images/utc.jpg', '2010-10-22 03:07:13.037604', E'<p>
+ Pragmatic programmers use feedback to drive their development and 
+ personal processes. The most valuable feedback you can get while 
+ coding comes from unit testing.
+ </p>
+ <p>
+ Without good tests in place, coding can become a frustrating game of 
+ "whack-a-mole." That''s the carnival game where the player strikes at a 
+ mechanical mole; it retreats and another mole pops up on the opposite side 
+ of the field. The moles pop up and down so fast that you end up flailing 
+ your mallet helplessly as the moles continue to pop up where you least 
+ expect them.
+ </p>') RETURNING "id"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100911024602')[0m
+  [4;35;1mSQL (12.8ms)[0m   [0mCOMMIT[0m
+Migrating to CreateSessions (20101007013050)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (77.3ms)[0m   [0mCREATE TABLE "sessions" ("id" serial primary key, "session_id" character varying(255) NOT NULL, "data" text, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (33.3ms)[0m   [0;1mCREATE INDEX "index_sessions_on_session_id" ON "sessions" ("session_id")[0m
+  [4;35;1mSQL (33.5ms)[0m   [0mCREATE INDEX "index_sessions_on_updated_at" ON "sessions" ("updated_at")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101007013050')[0m
+  [4;35;1mSQL (14.5ms)[0m   [0mCOMMIT[0m
+Migrating to CreateOrders (20101022014501)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (70.2ms)[0m   [0mCREATE TABLE "orders" ("id" serial primary key, "name" character varying(255), "address" text, "email" character varying(255), "pay_type" character varying(10), "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101022014501')[0m
+  [4;35;1mSQL (17.1ms)[0m   [0mCOMMIT[0m
+Migrating to CreateLineItems (20101022014612)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (37.0ms)[0m   [0mCREATE TABLE "line_items" ("id" serial primary key, "product_id" integer NOT NULL, "order_id" integer NOT NULL, "quantity" integer NOT NULL, "total_price" decimal(8,2) NOT NULL, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mALTER TABLE line_items
+ ADD CONSTRAINT fk_line_items_products
+ FOREIGN KEY (product_id)
+ REFERENCES products(id)[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mALTER TABLE line_items
+ ADD CONSTRAINT fk_line_items_orders
+ FOREIGN KEY (order_id)
+ REFERENCES orders(id)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101022014612')[0m
+  [4;35;1mSQL (21.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateLineItems (20101022014612)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (3.3ms)[0m   [0mDROP TABLE "line_items"[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101022014612'[0m
+  [4;35;1mSQL (28.5ms)[0m   [0mCOMMIT[0m
+Migrating to CreateOrders (20101022014501)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mDROP TABLE "orders"[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101022014501'[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mCOMMIT[0m
+Migrating to CreateSessions (20101007013050)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mDROP TABLE "sessions"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101007013050'[0m
+  [4;35;1mSQL (13.7ms)[0m   [0mCOMMIT[0m
+Migrating to AddTestData (20100911024602)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProduct Delete all (0.6ms)[0m   [0mDELETE FROM "products" [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100911024602'[0m
+  [4;35;1mSQL (5.3ms)[0m   [0mCOMMIT[0m
+Migrating to AddPriceToProduct (20100911014506)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mALTER TABLE "products" DROP "price"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100911014506'[0m
+  [4;35;1mSQL (5.2ms)[0m   [0mCOMMIT[0m
+Migrating to CreateProducts (20100911013827)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mDROP TABLE "products"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100911013827'[0m
+  [4;35;1mSQL (12.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20100911013827)
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (120.4ms)[0m   [0;1mCREATE TABLE "products" ("id" serial primary key, "title" character varying(255), "description" text, "image_url" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100911013827')[0m
+  [4;36;1mSQL (18.6ms)[0m   [0;1mCOMMIT[0m
+Migrating to AddPriceToProduct (20100911014506)
+  [4;35;1mSQL (0.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mALTER TABLE "products" ADD COLUMN "price" decimal(8,2)[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mALTER TABLE "products" ALTER COLUMN "price" SET DEFAULT 0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100911014506')[0m
+  [4;35;1mSQL (8.2ms)[0m   [0mCOMMIT[0m
+Migrating to AddTestData (20100911024602)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProduct Delete all (0.5ms)[0m   [0mDELETE FROM "products" [0m
+  [4;36;1mProduct Load (0.8ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = E'Pragmatic Project Automation') LIMIT 1[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO "products" ("price", "created_at", "title", "image_url", "updated_at", "description") VALUES(29.95, '2010-10-22 03:11:46.650192', E'Pragmatic Project Automation', E'/images/auto.jpg', '2010-10-22 03:11:46.650192', E'<p>
+ <em>Pragmatic Project Automation</em> shows you how to improve the 
+ consistency and repeatability of your project''s procedures using 
+ automation to reduce risk and errors.
+ </p>
+ <p>
+ Simply put, we''re going to put this thing called a computer to work 
+ for you doing the mundane (but important) project stuff. That means 
+ you''ll have more time and energy to do the really 
+ exciting---and difficult---stuff, like writing quality code.
+ </p>') RETURNING "id"[0m
+  [4;36;1mProduct Load (0.5ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = E'Pragmatic Version Control') LIMIT 1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO "products" ("price", "created_at", "title", "image_url", "updated_at", "description") VALUES(28.5, '2010-10-22 03:11:46.698026', E'Pragmatic Version Control', E'/images/svn.jpg', '2010-10-22 03:11:46.698026', E'<p>
+ This book is a recipe-based approach to using Subversion that will 
+ get you up and running quickly---and correctly. All projects need
+ version control: it''s a foundational piece of any project''s 
+ infrastructure. Yet half of all project teams in the U.S. don''t use
+ any version control at all. Many others don''t use it well, and end 
+ up experiencing time-consuming problems.
+ </p>') RETURNING "id"[0m
+  [4;36;1mProduct Load (0.4ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = E'Pragmatic Unit Testing (C#)') LIMIT 1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO "products" ("price", "created_at", "title", "image_url", "updated_at", "description") VALUES(27.75, '2010-10-22 03:11:46.702200', E'Pragmatic Unit Testing (C#)', E'/images/utc.jpg', '2010-10-22 03:11:46.702200', E'<p>
+ Pragmatic programmers use feedback to drive their development and 
+ personal processes. The most valuable feedback you can get while 
+ coding comes from unit testing.
+ </p>
+ <p>
+ Without good tests in place, coding can become a frustrating game of 
+ "whack-a-mole." That''s the carnival game where the player strikes at a 
+ mechanical mole; it retreats and another mole pops up on the opposite side 
+ of the field. The moles pop up and down so fast that you end up flailing 
+ your mallet helplessly as the moles continue to pop up where you least 
+ expect them.
+ </p>') RETURNING "id"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100911024602')[0m
+  [4;35;1mSQL (8.2ms)[0m   [0mCOMMIT[0m
+Migrating to CreateSessions (20101007013050)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (101.3ms)[0m   [0mCREATE TABLE "sessions" ("id" serial primary key, "session_id" character varying(255) NOT NULL, "data" text, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (33.2ms)[0m   [0;1mCREATE INDEX "index_sessions_on_session_id" ON "sessions" ("session_id")[0m
+  [4;35;1mSQL (33.3ms)[0m   [0mCREATE INDEX "index_sessions_on_updated_at" ON "sessions" ("updated_at")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101007013050')[0m
+  [4;35;1mSQL (18.7ms)[0m   [0mCOMMIT[0m
+Migrating to CreateOrders (20101022014501)
+  [4;36;1mSQL (0.9ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (77.6ms)[0m   [0mCREATE TABLE "orders" ("id" serial primary key, "name" character varying(255), "address" text, "email" character varying(255), "pay_type" character varying(10), "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101022014501')[0m
+  [4;35;1mSQL (14.9ms)[0m   [0mCOMMIT[0m
+Migrating to CreateLineItems (20101022014612)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (52.7ms)[0m   [0mCREATE TABLE "line_items" ("id" serial primary key, "product_id" integer NOT NULL, "order_id" integer NOT NULL, "quantity" integer NOT NULL, "total_price" decimal(8,2) NOT NULL, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20100911013827)
+Migrating to AddPriceToProduct (20100911014506)
+Migrating to AddTestData (20100911024602)
+Migrating to CreateSessions (20101007013050)
+Migrating to CreateOrders (20101022014501)
+Migrating to CreateLineItems (20101022014612)
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (55.0ms)[0m   [0;1mCREATE TABLE "line_items" ("id" serial primary key, "product_id" integer NOT NULL, "order_id" integer NOT NULL, "quantity" integer NOT NULL, "total_price" decimal(8,2) NOT NULL, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (34.6ms)[0m   [0mALTER TABLE line_items
+ ADD CONSTRAINT fk_line_items_products
+ FOREIGN KEY (product_id)
+ REFERENCES products(id);
+ CREATE INDEX fki_line_items_products
+ ON line_items(product_id);[0m
+  [4;36;1mSQL (33.5ms)[0m   [0;1mALTER TABLE line_items
+ ADD CONSTRAINT fk_line_items_orders
+ FOREIGN KEY (order_id)
+ REFERENCES orders(id);
+ CREATE INDEX fki_line_items_orders
+ ON line_items(order_id);[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101022014612')[0m
+  [4;36;1mSQL (18.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateLineItems (20101022014612)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (3.6ms)[0m   [0mDROP TABLE "line_items"[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101022014612'[0m
+  [4;35;1mSQL (21.7ms)[0m   [0mCOMMIT[0m
+Migrating to CreateOrders (20101022014501)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mDROP TABLE "orders"[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101022014501'[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mCOMMIT[0m
+Migrating to CreateSessions (20101007013050)
+  [4;36;1mSQL (1.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mDROP TABLE "sessions"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101007013050'[0m
+  [4;35;1mSQL (12.1ms)[0m   [0mCOMMIT[0m
+Migrating to AddTestData (20100911024602)
+  [4;36;1mSQL (4.9ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProduct Delete all (9.7ms)[0m   [0mDELETE FROM "products" [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100911024602'[0m
+  [4;35;1mSQL (8.6ms)[0m   [0mCOMMIT[0m
+Migrating to AddPriceToProduct (20100911014506)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mALTER TABLE "products" DROP "price"[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100911014506'[0m
+  [4;35;1mSQL (3.7ms)[0m   [0mCOMMIT[0m
+Migrating to CreateProducts (20100911013827)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mDROP TABLE "products"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100911013827'[0m
+  [4;35;1mSQL (3.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20100911013827)
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (96.4ms)[0m   [0;1mCREATE TABLE "products" ("id" serial primary key, "title" character varying(255), "description" text, "image_url" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100911013827')[0m
+  [4;36;1mSQL (3.2ms)[0m   [0;1mCOMMIT[0m
+Migrating to AddPriceToProduct (20100911014506)
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mALTER TABLE "products" ADD COLUMN "price" decimal(8,2)[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mALTER TABLE "products" ALTER COLUMN "price" SET DEFAULT 0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100911014506')[0m
+  [4;35;1mSQL (7.6ms)[0m   [0mCOMMIT[0m
+Migrating to AddTestData (20100911024602)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProduct Delete all (2.8ms)[0m   [0mDELETE FROM "products" [0m
+  [4;36;1mProduct Load (0.9ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = E'Pragmatic Project Automation') LIMIT 1[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO "products" ("price", "created_at", "title", "image_url", "updated_at", "description") VALUES(29.95, '2010-10-22 03:17:39.608178', E'Pragmatic Project Automation', E'/images/auto.jpg', '2010-10-22 03:17:39.608178', E'<p>
+ <em>Pragmatic Project Automation</em> shows you how to improve the 
+ consistency and repeatability of your project''s procedures using 
+ automation to reduce risk and errors.
+ </p>
+ <p>
+ Simply put, we''re going to put this thing called a computer to work 
+ for you doing the mundane (but important) project stuff. That means 
+ you''ll have more time and energy to do the really 
+ exciting---and difficult---stuff, like writing quality code.
+ </p>') RETURNING "id"[0m
+  [4;36;1mProduct Load (0.5ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = E'Pragmatic Version Control') LIMIT 1[0m
+  [4;35;1mSQL (9.4ms)[0m   [0mINSERT INTO "products" ("price", "created_at", "title", "image_url", "updated_at", "description") VALUES(28.5, '2010-10-22 03:17:39.683931', E'Pragmatic Version Control', E'/images/svn.jpg', '2010-10-22 03:17:39.683931', E'<p>
+ This book is a recipe-based approach to using Subversion that will 
+ get you up and running quickly---and correctly. All projects need
+ version control: it''s a foundational piece of any project''s 
+ infrastructure. Yet half of all project teams in the U.S. don''t use
+ any version control at all. Many others don''t use it well, and end 
+ up experiencing time-consuming problems.
+ </p>') RETURNING "id"[0m
+  [4;36;1mProduct Load (0.5ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = E'Pragmatic Unit Testing (C#)') LIMIT 1[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO "products" ("price", "created_at", "title", "image_url", "updated_at", "description") VALUES(27.75, '2010-10-22 03:17:39.702644', E'Pragmatic Unit Testing (C#)', E'/images/utc.jpg', '2010-10-22 03:17:39.702644', E'<p>
+ Pragmatic programmers use feedback to drive their development and 
+ personal processes. The most valuable feedback you can get while 
+ coding comes from unit testing.
+ </p>
+ <p>
+ Without good tests in place, coding can become a frustrating game of 
+ "whack-a-mole." That''s the carnival game where the player strikes at a 
+ mechanical mole; it retreats and another mole pops up on the opposite side 
+ of the field. The moles pop up and down so fast that you end up flailing 
+ your mallet helplessly as the moles continue to pop up where you least 
+ expect them.
+ </p>') RETURNING "id"[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100911024602')[0m
+  [4;35;1mSQL (11.0ms)[0m   [0mCOMMIT[0m
+Migrating to CreateSessions (20101007013050)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (110.2ms)[0m   [0mCREATE TABLE "sessions" ("id" serial primary key, "session_id" character varying(255) NOT NULL, "data" text, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (33.1ms)[0m   [0;1mCREATE INDEX "index_sessions_on_session_id" ON "sessions" ("session_id")[0m
+  [4;35;1mSQL (33.4ms)[0m   [0mCREATE INDEX "index_sessions_on_updated_at" ON "sessions" ("updated_at")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101007013050')[0m
+  [4;35;1mSQL (25.1ms)[0m   [0mCOMMIT[0m
+Migrating to CreateOrders (20101022014501)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (86.5ms)[0m   [0mCREATE TABLE "orders" ("id" serial primary key, "name" character varying(255), "address" text, "email" character varying(255), "pay_type" character varying(10), "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101022014501')[0m
+  [4;35;1mSQL (21.2ms)[0m   [0mCOMMIT[0m
+Migrating to CreateLineItems (20101022014612)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (40.4ms)[0m   [0mCREATE TABLE "line_items" ("id" serial primary key, "product_id" integer NOT NULL, "order_id" integer NOT NULL, "quantity" integer NOT NULL, "total_price" decimal(8,2) NOT NULL, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (41.8ms)[0m   [0;1mALTER TABLE line_items
+ ADD CONSTRAINT fk_line_items_products
+ FOREIGN KEY (product_id)
+ REFERENCES products(id);
+ CREATE INDEX fk_line_items_products
+ ON line_items(product_id);[0m
+  [4;35;1mSQL (41.5ms)[0m   [0mALTER TABLE line_items
+ ADD CONSTRAINT fk_line_items_orders
+ FOREIGN KEY (order_id)
+ REFERENCES orders(id);
+ CREATE INDEX fk_line_items_orders
+ ON line_items(order_id);[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101022014612')[0m
+  [4;35;1mSQL (23.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
