@@ -46,6 +46,11 @@ class StoreController < ApplicationController
     end
   end
 
+protected
+
+  def authorize
+  end
+
 private
 
   def find_cart

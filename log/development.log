@@ -2613,3 +2613,333 @@ Processing UsersController#show (for 127.0.0.1 at 2010-10-25 22:20:37) [GET]
 Rendering template within layouts/users
 Rendering users/show
 Completed in 36ms (View: 7, DB: 17) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-10-25 22:34:39) [GET]
+  [4;36;1mUser Load (1.8ms)[0m   [0;1mSELECT * FROM "users" ORDER BY name[0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 33ms (View: 21, DB: 3) | 200 OK [http://localhost/users/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-10-25 22:34:42) [GET]
+  [4;35;1mUser Load (1.8ms)[0m   [0mSELECT * FROM "users" ORDER BY name[0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 30ms (View: 18, DB: 3) | 200 OK [http://localhost/users/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-25 22:34:49) [GET]
+
+ActionController::RoutingError (No route matches "/admin" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-25 22:35:36) [GET]
+
+ActionController::RoutingError (No route matches "/admin" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-10-25 22:35:45) [GET]
+  [4;36;1mUser Load (1.8ms)[0m   [0;1mSELECT * FROM "users" ORDER BY name[0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 29ms (View: 18, DB: 3) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-10-25 22:35:50) [GET]
+  [4;35;1mProduct Load (2.0ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (3.6ms)
+Completed in 39ms (View: 24, DB: 4) | 200 OK [http://localhost/store]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-25 22:35:54) [GET]
+
+ActionController::RoutingError (No route matches "/admin" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2010-10-25 22:36:30) [GET]
+  [4;36;1mSQL (43.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "orders" [0m
+Rendering admin/index
+Completed in 68ms (View: 7, DB: 43) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (13.5ms)[0m   [0;1mDELETE FROM sessions[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-10-25 22:41:48) [GET]
+  [4;35;1mProduct Load (2.2ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (5.5ms)
+Completed in 123ms (View: 104, DB: 3) | 200 OK [http://localhost/store]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2010-10-25 22:41:57) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 17ms (DB: 3) | 302 Found [http://localhost/admin]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-10-25 22:41:57) [GET]
+Rendering admin/login
+
+ActionView::TemplateError (undefined method `[]' for :params:Symbol) on line #8 of app/views/admin/login.html.erb:
+5: 			
+6: 			<div>
+7: 				<label for="name">Name:</label>
+8: 				<%= text_field_tag :name, :params[:name] %>
+9: 			</div>
+10: 			
+11: 			<div>
+
+    app/views/admin/login.html.erb:8
+    app/views/admin/login.html.erb:2
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (112.9ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-10-25 22:43:25) [GET]
+Rendering admin/login
+Completed in 15ms (View: 10, DB: 3) | 200 OK [http://localhost/admin/login]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-10-25 22:46:50) [POST]
+  Parameters: {"name"=>"spencer", "commit"=>"Login", "authenticity_token"=>"EkJdNLlC4PalKAfyL1QKF8gCsWyeo2amPVxAcu9BrmU=", "password"=>"foobar"}
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = E'spencer') LIMIT 1[0m
+Rendering admin/login
+Completed in 21ms (View: 3, DB: 3) | 200 OK [http://localhost/admin/login]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-10-25 22:46:55) [POST]
+  Parameters: {"name"=>"spencer", "commit"=>"Login", "authenticity_token"=>"EkJdNLlC4PalKAfyL1QKF8gCsWyeo2amPVxAcu9BrmU=", "password"=>"foobar"}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = E'spencer') LIMIT 1[0m
+Rendering admin/login
+Completed in 20ms (View: 2, DB: 3) | 200 OK [http://localhost/admin/login]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-10-25 22:46:57) [POST]
+  Parameters: {"name"=>"spencer", "commit"=>"Login", "authenticity_token"=>"EkJdNLlC4PalKAfyL1QKF8gCsWyeo2amPVxAcu9BrmU=", "password"=>"foobar"}
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = E'spencer') LIMIT 1[0m
+Rendering admin/login
+Completed in 22ms (View: 2, DB: 3) | 200 OK [http://localhost/admin/login]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-10-25 22:47:05) [POST]
+  Parameters: {"name"=>"spencer", "commit"=>"Login", "authenticity_token"=>"EkJdNLlC4PalKAfyL1QKF8gCsWyeo2amPVxAcu9BrmU=", "password"=>"blah"}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = E'spencer') LIMIT 1[0m
+Rendering admin/login
+Completed in 21ms (View: 2, DB: 3) | 200 OK [http://localhost/admin/login]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-10-25 22:47:09) [POST]
+  Parameters: {"name"=>"spencer", "commit"=>"Login", "authenticity_token"=>"EkJdNLlC4PalKAfyL1QKF8gCsWyeo2amPVxAcu9BrmU=", "password"=>"blah"}
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = E'spencer') LIMIT 1[0m
+Rendering admin/login
+Completed in 21ms (View: 3, DB: 3) | 200 OK [http://localhost/admin/login]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (17.8ms)[0m   [0;1mDELETE FROM sessions[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-10-25 22:47:19) [POST]
+  Parameters: {"name"=>"spencer", "commit"=>"Login", "authenticity_token"=>"EkJdNLlC4PalKAfyL1QKF8gCsWyeo2amPVxAcu9BrmU=", "password"=>"blah"}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (96.6ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (unprocessable_entity)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2010-10-25 22:47:23) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 13ms (DB: 3) | 302 Found [http://localhost/admin/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-10-25 22:47:23) [GET]
+Rendering admin/login
+Completed in 8ms (View: 3, DB: 3) | 200 OK [http://localhost/admin/login]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-10-25 22:47:31) [POST]
+  Parameters: {"name"=>"spencer", "commit"=>"Login", "authenticity_token"=>"sWutdL2t44Bmzz4Eab4C4aciOqn6qunPfeb5mAH2M2M=", "password"=>"blah"}
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = E'spencer') LIMIT 1[0m
+Rendering admin/login
+Completed in 17ms (View: 3, DB: 3) | 200 OK [http://localhost/admin/login]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-10-25 22:47:32) [POST]
+  Parameters: {"name"=>"spencer", "commit"=>"Login", "authenticity_token"=>"sWutdL2t44Bmzz4Eab4C4aciOqn6qunPfeb5mAH2M2M=", "password"=>"blah"}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = E'spencer') LIMIT 1[0m
+Rendering admin/login
+Completed in 17ms (View: 2, DB: 3) | 200 OK [http://localhost/admin/login]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (16.8ms)[0m   [0;1mDELETE FROM sessions[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2010-10-25 22:50:06) [GET]
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 35ms (DB: 2) | 302 Found [http://localhost/admin/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-10-25 22:50:06) [GET]
+Rendering admin/login
+Completed in 20ms (View: 15, DB: 3) | 200 OK [http://localhost/admin/login]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-10-25 22:50:51) [POST]
+  Parameters: {"name"=>"ethan", "commit"=>"Login", "authenticity_token"=>"go0Wly4uVCnvPQCopQYRXu2mHyJJe8313QnEyZsS7UY=", "password"=>"foobar"}
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = E'ethan') LIMIT 1[0m
+Rendering admin/login
+Completed in 19ms (View: 3, DB: 4) | 200 OK [http://localhost/admin/login]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-10-25 22:53:27) [GET]
+  [4;36;1mProduct Load (2.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (4.9ms)
+Completed in 54ms (View: 39, DB: 4) | 200 OK [http://localhost/store]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2010-10-25 22:53:31) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 16ms (DB: 3) | 302 Found [http://localhost/admin]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-10-25 22:53:31) [GET]
+Rendering admin/login
+Completed in 11ms (View: 6, DB: 3) | 200 OK [http://localhost/admin/login]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing AdminController#login (for 127.0.0.1 at 2010-10-25 22:54:59) [POST]
+  Parameters: {"name"=>"junk", "commit"=>"Login", "authenticity_token"=>"go0Wly4uVCnvPQCopQYRXu2mHyJJe8313QnEyZsS7UY=", "password"=>"infnid"}
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = E'junk') LIMIT 1[0m
+Rendering admin/login
+Completed in 22ms (View: 3, DB: 3) | 200 OK [http://localhost/admin/login]
