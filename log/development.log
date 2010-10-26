@@ -2388,3 +2388,228 @@ Processing StoreController#empty_cart (for 127.0.0.1 at 2010-10-22 00:10:59) [PO
   Parameters: {"commit"=>"Empty cart", "authenticity_token"=>"IN0Ff/QRl4zYaiKk07f1O9P4dTIWwF3iJ0nzEGivqyA=", "_"=>""}
 Rendering store/empty_cart
 Completed in 53ms (View: 1, DB: 38) | 200 OK [http://localhost/store/empty_cart]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20100911013827)
+Migrating to AddPriceToProduct (20100911014506)
+Migrating to AddTestData (20100911024602)
+Migrating to CreateSessions (20101007013050)
+Migrating to CreateOrders (20101022014501)
+Migrating to CreateLineItems (20101022014612)
+Migrating to CreateUsers (20101026012820)
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (384.6ms)[0m   [0;1mCREATE TABLE "users" ("id" serial primary key, "name" character varying(255), "hashed_password" character varying(255), "salt" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (19.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101026012820')[0m
+  [4;36;1mSQL (39.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-10-25 22:14:14) [GET]
+  [4;36;1mProduct Load (15.7ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (5.3ms)
+Completed in 119ms (View: 51, DB: 41) | 200 OK [http://localhost/store]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-10-25 22:14:22) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 37ms (View: 23, DB: 2) | 200 OK [http://localhost/users/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-10-25 22:14:46) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 23ms (View: 10, DB: 2) | 200 OK [http://localhost/users/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-10-25 22:14:57) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 23ms (View: 10, DB: 2) | 200 OK [http://localhost/users/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-10-25 22:15:13) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 20ms (View: 7, DB: 2) | 200 OK [http://localhost/users/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-10-25 22:16:14) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 29ms (View: 16, DB: 2) | 200 OK [http://localhost/users/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-10-25 22:16:59) [POST]
+  Parameters: {"commit"=>"Add User", "authenticity_token"=>"g/ProoyMRZCguw3CHO5ATcjDJTUvUs1q8UXkWqPKCF0=", "user"=>{"name"=>"Spencer", "password_confirmation"=>"foobar", "password"=>"foobar"}}
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."name" = E'Spencer') LIMIT 1[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO "users" ("name", "salt", "created_at", "updated_at", "hashed_password") VALUES(E'Spencer', E'702628360551000.0338495526682513', '2010-10-26 02:16:59.340793', '2010-10-26 02:16:59.340793', E'30171d556a4df105d9588b898ec2f9553919bade') RETURNING "id"[0m
+  [4;36;1mSQL (16.6ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/users
+Completed in 44ms (DB: 21) | 302 Found [http://localhost/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-10-25 22:16:59) [GET]
+  [4;35;1mUser Load (1.8ms)[0m   [0mSELECT * FROM "users" ORDER BY name[0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 29ms (View: 18, DB: 3) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-10-25 22:17:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 31ms (View: 17, DB: 2) | 200 OK [http://localhost/users/1/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-10-25 22:17:43) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"g/ProoyMRZCguw3CHO5ATcjDJTUvUs1q8UXkWqPKCF0=", "id"=>"1", "user"=>{"salt"=>"702628360551000.0338495526682513", "name"=>"Spencer", "hashed_password"=>"30171d556a4df105d9588b898ec2f9553919bade"}}
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."name" = E'Spencer' AND "users".id <> 1) LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/users
+Completed in 24ms (DB: 4) | 302 Found [http://localhost/users/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-10-25 22:17:43) [GET]
+  [4;35;1mUser Load (1.7ms)[0m   [0mSELECT * FROM "users" ORDER BY name[0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 25ms (View: 14, DB: 3) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-10-25 22:17:46) [GET]
+  [4;36;1mUser Load (1.7ms)[0m   [0;1mSELECT * FROM "users" ORDER BY name[0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 24ms (View: 13, DB: 3) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-25 22:17:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 27ms (View: 12, DB: 2) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-10-25 22:17:50) [GET]
+  [4;36;1mUser Load (1.8ms)[0m   [0;1mSELECT * FROM "users" ORDER BY name[0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 25ms (View: 14, DB: 3) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-10-25 22:18:36) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 23ms (View: 10, DB: 2) | 200 OK [http://localhost/users/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-10-25 22:18:43) [POST]
+  Parameters: {"commit"=>"Add User", "authenticity_token"=>"g/ProoyMRZCguw3CHO5ATcjDJTUvUs1q8UXkWqPKCF0=", "user"=>{"name"=>"bob", "password_confirmation"=>"foobar", "password"=>"foobar"}}
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."name" = E'bob') LIMIT 1[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO "users" ("name", "salt", "created_at", "updated_at", "hashed_password") VALUES(E'bob', E'702628081988800.722367023901551', '2010-10-26 02:18:43.910904', '2010-10-26 02:18:43.910904', E'cc49d162d0f088a64bd23a5a9262fb0ac79cdfd1') RETURNING "id"[0m
+  [4;36;1mSQL (12.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/users
+Completed in 39ms (DB: 16) | 302 Found [http://localhost/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-10-25 22:18:44) [GET]
+  [4;35;1mUser Load (1.9ms)[0m   [0mSELECT * FROM "users" ORDER BY name[0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 32ms (View: 17, DB: 3) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-10-25 22:18:54) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendering template within layouts/users
+Rendering users/edit
+Completed in 25ms (View: 11, DB: 2) | 200 OK [http://localhost/users/2/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-10-25 22:18:57) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"g/ProoyMRZCguw3CHO5ATcjDJTUvUs1q8UXkWqPKCF0=", "id"=>"2", "user"=>{"salt"=>"702628081988800.722367023901551", "name"=>"bob", "hashed_password"=>"cc49d162d0f088a64bd23a5a9262fb0ac79cdfd1"}}
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."name" = E'bob' AND "users".id <> 2) LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/users
+Completed in 23ms (DB: 4) | 302 Found [http://localhost/users/2]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-10-25 22:18:57) [GET]
+  [4;35;1mUser Load (1.9ms)[0m   [0mSELECT * FROM "users" ORDER BY name[0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 87ms (View: 76, DB: 3) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-25 22:19:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 22ms (View: 7, DB: 2) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-25 22:20:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 36ms (View: 7, DB: 17) | 200 OK [http://localhost/users/1]
