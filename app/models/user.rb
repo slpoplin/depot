@@ -14,6 +14,12 @@ class User < ActiveRecord::Base
     @password
   end
   
+  def after_destroy
+    if User.count.zero?
+      raise "Can't delete last user"
+    end
+  end
+  
   def password=(pwd)
     @password = pwd
     return if pwd.blank?
