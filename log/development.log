@@ -4114,3 +4114,233 @@ Processing InfoController#who_bought (for 127.0.0.1 at 2010-11-10 22:27:19) [GET
 Rendering info/who_bought
   [4;35;1mOrder Load (1.2ms)[0m   [0mSELECT "orders".* FROM "orders" INNER JOIN "line_items" ON "orders".id = "line_items".order_id WHERE (("line_items".product_id = 1)) [0m
 Completed in 27ms (View: 10, DB: 2) | 200 OK [http://localhost/info/who_bought/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing InfoController#who_bought (for 127.0.0.1 at 2010-11-10 22:41:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProduct Load (0.7ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Rendering info/who_bought
+  [4;35;1mOrder Load (2.3ms)[0m   [0mSELECT "orders".* FROM "orders" INNER JOIN "line_items" ON "orders".id = "line_items".order_id WHERE (("line_items".product_id = 1)) [0m
+Completed in 26ms (View: 9, DB: 3) | 200 OK [http://localhost/info/who_bought/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing InfoController#who_bought (for 127.0.0.1 at 2010-11-10 22:41:17) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProduct Load (0.9ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Rendering template within layouts/store
+Rendering info/who_bought
+  [4;35;1mOrder Load (3.8ms)[0m   [0mSELECT "orders".* FROM "orders" INNER JOIN "line_items" ON "orders".id = "line_items".order_id WHERE (("line_items".product_id = 1)) [0m
+Completed in 107ms (View: 87, DB: 6) | 200 OK [http://localhost/info/who_bought/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing InfoController#who_bought to xml (for 127.0.0.1 at 2010-11-10 23:11:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProduct Load (0.7ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Rendering info/who_bought
+  [4;35;1mOrder Load (1.2ms)[0m   [0mSELECT "orders".* FROM "orders" INNER JOIN "line_items" ON "orders".id = "line_items".order_id WHERE (("line_items".product_id = 1)) [0m
+Completed in 26ms (View: 9, DB: 2) | 200 OK [http://localhost/info/who_bought/1.xml]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing InfoController#who_bought to html (for 127.0.0.1 at 2010-11-10 23:11:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProduct Load (0.7ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Rendering template within layouts/store
+Rendering info/who_bought
+  [4;35;1mOrder Load (1.2ms)[0m   [0mSELECT "orders".* FROM "orders" INNER JOIN "line_items" ON "orders".id = "line_items".order_id WHERE (("line_items".product_id = 1)) [0m
+Completed in 32ms (View: 14, DB: 3) | 200 OK [http://localhost/info/who_bought/1.html]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing InfoController#who_bought to xml (for 127.0.0.1 at 2010-11-10 23:11:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProduct Load (0.7ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Rendering info/who_bought
+  [4;35;1mOrder Load (1.1ms)[0m   [0mSELECT "orders".* FROM "orders" INNER JOIN "line_items" ON "orders".id = "line_items".order_id WHERE (("line_items".product_id = 1)) [0m
+Completed in 27ms (View: 10, DB: 2) | 200 OK [http://localhost/info/who_bought/1.xml]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing InfoController#who_bought to html (for 127.0.0.1 at 2010-11-10 23:11:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProduct Load (0.7ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Rendering template within layouts/store
+Rendering info/who_bought
+  [4;35;1mOrder Load (1.2ms)[0m   [0mSELECT "orders".* FROM "orders" INNER JOIN "line_items" ON "orders".id = "line_items".order_id WHERE (("line_items".product_id = 1)) [0m
+Completed in 32ms (View: 14, DB: 4) | 200 OK [http://localhost/info/who_bought/1.html]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing InfoController#who_bought (for 127.0.0.1 at 2010-11-10 23:13:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProduct Load (0.7ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Rendering template within layouts/store
+Rendering info/who_bought
+  [4;35;1mOrder Load (2.0ms)[0m   [0mSELECT "orders".* FROM "orders" INNER JOIN "line_items" ON "orders".id = "line_items".order_id WHERE (("line_items".product_id = 1)) [0m
+Completed in 84ms (View: 66, DB: 4) | 200 OK [http://localhost/info/who_bought/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing InfoController#who_bought (for 127.0.0.1 at 2010-11-10 23:13:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProduct Load (0.7ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Rendering template within layouts/store
+Rendering info/who_bought
+  [4;35;1mOrder Load (1.1ms)[0m   [0mSELECT "orders".* FROM "orders" INNER JOIN "line_items" ON "orders".id = "line_items".order_id WHERE (("line_items".product_id = 1)) [0m
+Completed in 34ms (View: 15, DB: 4) | 200 OK [http://localhost/info/who_bought/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing InfoController#who_bought (for 127.0.0.1 at 2010-11-10 23:14:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProduct Load (0.7ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Rendering template within layouts/store
+Rendering info/who_bought
+  [4;35;1mOrder Load (1.2ms)[0m   [0mSELECT "orders".* FROM "orders" INNER JOIN "line_items" ON "orders".id = "line_items".order_id WHERE (("line_items".product_id = 1)) [0m
+Completed in 63ms (View: 27, DB: 3) | 200 OK [http://localhost/info/who_bought/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing InfoController#who_bought to xml (for 127.0.0.1 at 2010-11-10 23:14:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProduct Load (1.7ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;35;1mOrder Load (1.2ms)[0m   [0mSELECT "orders".* FROM "orders" INNER JOIN "line_items" ON "orders".id = "line_items".order_id WHERE (("line_items".product_id = 1)) [0m
+Completed in 120ms (View: 0, DB: 3) | 200 OK [http://localhost/info/who_bought/1.xml]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing InfoController#who_bought to atom (for 127.0.0.1 at 2010-11-10 23:39:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProduct Load (0.8ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Rendering info/who_bought
+  [4;35;1mOrder Load (19.8ms)[0m   [0mSELECT "orders".* FROM "orders" INNER JOIN "line_items" ON "orders".id = "line_items".order_id WHERE (("line_items".product_id = 1)) LIMIT 1[0m
+  [4;36;1mOrder Load (0.6ms)[0m   [0;1mSELECT "orders".* FROM "orders" INNER JOIN "line_items" ON "orders".id = "line_items".order_id WHERE (("line_items".product_id = 1)) [0m
+
+ActionView::TemplateError (undefined local variable or method `order' for #<ActionView::Base:0x7f40b09f92a8>) on line #6 of app/views/info/who_bought.atom.builder:
+3:   feed.updated @orders.first.created_at
+4:   
+5:   for orders in @orders
+6:     feed.entry(order) do |entry|
+7:       entry.title "Order #{order.id}"
+8:       entry.summary :type => 'xhtml' do |xhtml|
+9:         xhtml.p "Shipped to #{order.address}"
+
+    app/views/info/who_bought.atom.builder:6:in `_run_builder_app47views47info47who_bought46atom46builder'
+    app/views/info/who_bought.atom.builder:5:in `_run_builder_app47views47info47who_bought46atom46builder'
+    builder (2.1.2) lib/builder/xmlbase.rb:134:in `call'
+    builder (2.1.2) lib/builder/xmlbase.rb:134:in `_nested_structures'
+    builder (2.1.2) lib/builder/xmlbase.rb:58:in `method_missing'
+    app/views/info/who_bought.atom.builder:1:in `_run_builder_app47views47info47who_bought46atom46builder'
+    app/controllers/info_controller.rb:8
+    app/controllers/info_controller.rb:5:in `who_bought'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.9ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing InfoController#who_bought to atom (for 127.0.0.1 at 2010-11-10 23:40:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProduct Load (0.7ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Rendering info/who_bought
+  [4;36;1mOrder Load (1.2ms)[0m   [0;1mSELECT "orders".* FROM "orders" INNER JOIN "line_items" ON "orders".id = "line_items".order_id WHERE (("line_items".product_id = 1)) LIMIT 1[0m
+  [4;35;1mOrder Load (0.6ms)[0m   [0mSELECT "orders".* FROM "orders" INNER JOIN "line_items" ON "orders".id = "line_items".order_id WHERE (("line_items".product_id = 1)) [0m
+
+ActionView::TemplateError (undefined local variable or method `xhmtl' for #<ActionView::Base:0x7f40ab76d548>) on line #14 of app/views/info/who_bought.atom.builder:
+11:         xhtml.table do
+12:           xhtml.tr do
+13:             xhtml.th 'Product'
+14:             xhmtl.th 'Quantity'
+15:             xhtml.th 'Total Price'
+16:           end
+17:           for item in order.line_items
+
+    app/views/info/who_bought.atom.builder:14
+    builder (2.1.2) lib/builder/xmlbase.rb:134:in `call'
+    builder (2.1.2) lib/builder/xmlbase.rb:134:in `_nested_structures'
+    builder (2.1.2) lib/builder/xmlbase.rb:58:in `method_missing'
+    app/views/info/who_bought.atom.builder:12
+    builder (2.1.2) lib/builder/xmlbase.rb:134:in `call'
+    builder (2.1.2) lib/builder/xmlbase.rb:134:in `_nested_structures'
+    builder (2.1.2) lib/builder/xmlbase.rb:58:in `method_missing'
+    app/views/info/who_bought.atom.builder:11
+    builder (2.1.2) lib/builder/xmlbase.rb:134:in `call'
+    builder (2.1.2) lib/builder/xmlbase.rb:134:in `_nested_structures'
+    builder (2.1.2) lib/builder/xmlbase.rb:58:in `method_missing'
+    builder (2.1.2) lib/builder/xmlbase.rb:134:in `call'
+    builder (2.1.2) lib/builder/xmlbase.rb:134:in `_nested_structures'
+    builder (2.1.2) lib/builder/xmlbase.rb:58:in `method_missing'
+    app/views/info/who_bought.atom.builder:8:in `_run_builder_app47views47info47who_bought46atom46builder'
+    builder (2.1.2) lib/builder/xmlbase.rb:134:in `call'
+    builder (2.1.2) lib/builder/xmlbase.rb:134:in `_nested_structures'
+    builder (2.1.2) lib/builder/xmlbase.rb:58:in `method_missing'
+    app/views/info/who_bought.atom.builder:6:in `_run_builder_app47views47info47who_bought46atom46builder'
+    app/views/info/who_bought.atom.builder:5:in `_run_builder_app47views47info47who_bought46atom46builder'
+    builder (2.1.2) lib/builder/xmlbase.rb:134:in `call'
+    builder (2.1.2) lib/builder/xmlbase.rb:134:in `_nested_structures'
+    builder (2.1.2) lib/builder/xmlbase.rb:58:in `method_missing'
+    app/views/info/who_bought.atom.builder:1:in `_run_builder_app47views47info47who_bought46atom46builder'
+    app/controllers/info_controller.rb:8
+    app/controllers/info_controller.rb:5:in `who_bought'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (59.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing InfoController#who_bought to atom (for 127.0.0.1 at 2010-11-10 23:41:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProduct Load (0.8ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Rendering info/who_bought
+  [4;35;1mOrder Load (1.2ms)[0m   [0mSELECT "orders".* FROM "orders" INNER JOIN "line_items" ON "orders".id = "line_items".order_id WHERE (("line_items".product_id = 1)) LIMIT 1[0m
+  [4;36;1mOrder Load (0.6ms)[0m   [0;1mSELECT "orders".* FROM "orders" INNER JOIN "line_items" ON "orders".id = "line_items".order_id WHERE (("line_items".product_id = 1)) [0m
+  [4;35;1mLineItem Load (20.9ms)[0m   [0mSELECT * FROM "line_items" WHERE ("line_items".order_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Completed in 67ms (View: 28, DB: 24) | 200 OK [http://localhost/info/who_bought/1.atom]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing InfoController#who_bought (for 127.0.0.1 at 2010-11-10 23:44:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProduct Load (0.8ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mOrder Load (1.3ms)[0m   [0;1mSELECT "orders".* FROM "orders" INNER JOIN "line_items" ON "orders".id = "line_items".order_id WHERE (("line_items".product_id = 1)) [0m
+Completed in 25ms (View: 0, DB: 2) | 200 OK [http://localhost/info/who_bought/1]
