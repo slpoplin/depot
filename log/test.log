@@ -1,0 +1,101 @@
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (2.9ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProduct Load (0.5ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProduct Load (0.5ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProduct Load (0.9ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = E'My Book Title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = E'My Book Title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = E'My Book Title') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProduct Load (0.4ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mProduct Load (4.2ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = E'My Book Title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.4ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = E'My Book Title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.4ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = E'My Book Title') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProduct Load (0.9ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = E'My Book Title') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mProduct Load (0.4ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProduct Load (0.5ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = E'My Book Title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.4ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = E'My Book Title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.4ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = E'My Book Title') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProduct Load (0.7ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = E'My Book Title') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mProduct Load (0.6ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProduct Load (0.4ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = E'My Book Title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = E'My Book Title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = E'My Book Title') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProduct Load (0.8ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = E'My Book Title') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = E'My Book Title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = E'My Book Title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = E'My Book Title') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProduct Load (0.7ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = E'My Book Title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = E'My Book Title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = E'My Book Title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.5ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = E'My Book Title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.4ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = E'My Book Title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.4ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = E'My Book Title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = E'My Book Title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = E'My Book Title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = E'My Book Title') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProduct Load (0.4ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" IS NULL) LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = E'My Book Title') LIMIT 1[0m
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT "products".id FROM "products" WHERE ("products"."title" = E'My Book Title') LIMIT 1[0m
+  [4;35;1mProduct Load (0.4ms)[0m   [0mSELECT "products".id FROM "products" WHERE ("products"."title" = E'My Book Title') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m

@@ -40,7 +40,10 @@ test:
   database: depot_test
   pool: 5
   username: depot
-  password:
+  password: foobar
+  
+  host: localhost
+  port: 5432
 
 production:
   adapter: postgresql
